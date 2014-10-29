@@ -2,21 +2,26 @@
 <html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>simple fancybox demo</title>
 
-	<script type="text/javascript" src="./fancyboxdemo_files/jquery-1.10.2.min.js"></script><style type="text/css"></style>
+	<script type="text/javascript" src="./fancyboxdemo_files/jquery.js"></script><style type="text/css"></style>
 
-	<script type="text/javascript" src="./fancyboxdemo_files/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="./fancyboxdemo_files/jqueryfancybox.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="./fancyboxdemo_files/jquery.fancybox.css" media="screen">
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('.fancybox').fancybox();
-		});
+	<link rel="stylesheet" type="text/css" href="./fancyboxdemo_files/jqueryfancybox.css" media="screen">
+<script>
+		$("a#inline").fancybox({
+  'padding': 50,    
+     helpers: { 
+        title: null
+    }
+	});
 	</script>
 </head>
 <body>
-	<h1>This is a lightbox test of FancyBox</h1>
 
-	<a class="fancybox" href="http://fancyapps.com/fancybox/demo/1_b.jpg" data-fancybox-group="gallery" title="Here's a picture of a tree"><img src="./fancyboxdemo_files/1_s.jpg" alt=""></a>
+
+<a id="inline" title="Hello World" href="#data">Contact/a>
+
+<div style="display:none;"><div id="data"><img src="http://lorempixel.com/400/200/" alt="" style="float: right;" /><h1>Yasmin Nourallah</h1><h2>BOOM MAKEUP <br>Professional Hair & Makeup</h2><h3>Contact Info</h3></div></div>
+
 
 </body></html>
